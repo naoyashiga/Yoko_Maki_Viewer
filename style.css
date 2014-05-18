@@ -1,0 +1,61 @@
+body{
+	background: #ffffff; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover,  #ffffff 0%, #f2f2f2 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#ffffff), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #ffffff 0%,#f2f2f2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #ffffff 0%,#f2f2f2 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #ffffff 0%,#f2f2f2 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #ffffff 0%,#f2f2f2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+ul,li{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+.container{
+	width:100%;
+}
+
+header{
+	width:80%;
+	margin:0 auto;
+	text-align:center;
+
+}
+
+.main{
+	width:80%;
+	margin:0 auto;
+}
+.makiImgLayout{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-between;
+	/*
+	justify-content:space-around;
+	*/
+}
+
+.makiImg{
+	max-width:250px;
+}
+
+.makiScore{
+	text-align:center;
+}
+
+button{
+	outline:none;
+	border:none;
+	width:250px;
+}
