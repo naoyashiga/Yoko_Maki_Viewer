@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja" ng-app>
+	<head>
+		<meta charset="UTF-8">
+		<title>Yoko Maki Viewer</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.8/angular.min.js"></script>
+		<script src="myscript.js"></script>
+	</head>
+	<body>
+		<section class="container">
+			<header>
+				<h1>Yoko Maki Viewer</h1>
+			</header>
+			<div class="main">
+				<div ng-controller="mainCtrl">
+					<ul ng-class="'makiImgLayout'">
+						<li ng-repeat="makiYoko in makiYokos" ng-controller="makiYokoItemCtrl">
+							<img ng-src="{{makiYoko.url}}" ng-class="'makiImg'">
+							<p ng-class="'makiScore'">{{makiYoko.score}}</p>
+							<button ng-click="increment()">♥</button>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
