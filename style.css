@@ -38,18 +38,40 @@ header{
 	margin:0 auto;
 }
 .makiImgLayout{
+	display:-webkit-box;
+	display:-moz-box;
+	display:box;
+	display:-webkit-flex;
 	display:flex;
-	flex-flow:row wrap;
+
+	-moz-box-orient:horizontal;
+	-webkit-box-orient:horizontal;
+	flex-direction:row;
+
+	-ms-flex-wrap:wrap;
+	-moz-flex-wrap:wrap;
+	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+
+	-moz-box-pack:justify;
+	-ms-box-pack:justify;
+	box-pack:justify;
+	flex-pack:justify;
+	-webkit-justify-content:space-between;
 	justify-content:space-between;
 	/*
 	justify-content:space-around;
 	*/
 }
 
+.makiImgLayout li{
+}
 .makiImg{
 	display:block;
 	max-width:250px;
 	-webkit-filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	filter:grayscale(100%);
 }
 
 .makiScore{
