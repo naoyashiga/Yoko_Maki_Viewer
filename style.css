@@ -30,7 +30,7 @@ header{
 	width:80%;
 	margin:0 auto;
 	text-align:center;
-
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 .main{
@@ -47,7 +47,9 @@ header{
 }
 
 .makiImg{
+	display:block;
 	max-width:250px;
+	-webkit-filter:grayscale(100%);
 }
 
 .makiScore{
