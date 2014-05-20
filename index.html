@@ -18,8 +18,12 @@
 				<div ng-controller="mainCtrl">
 					<ul ng-class="'makiImgLayout'">
 						<li ng-repeat="makiYoko in makiYokos | orderBy:'-score'" ng-controller="makiYokoItemCtrl">
-							<img ng-src="{{makiYoko.url}}" ng-class="'makiImg'">
-							<button ng-click="increment()">{{makiYoko.score}}</button>
+							<div class="imgWrapper">
+								<img ng-src="{{makiYoko.url}}" ng-class="'makiImg'">
+								<div class="filterWrapper">
+								</div>
+								<button ng-click="increment()">{{makiYoko.score}}</button>
+							</div>
 						</li>
 					</ul>
 				</div>
